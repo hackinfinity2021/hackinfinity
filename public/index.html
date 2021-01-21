@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel = "icon" href = "/assets/images/logo.png" type = "image/x-icon">
+  <title>Login Template</title>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Karla:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.8.95/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/assets/css/login.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="https://www.ssn.edu.in/">
+      <img src="/assets/images/logo.png" width="75" height="75" class="d-inline-block align-top" alt="">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="d-flex align-items-center min-vh-100 py-3 py-md-0" style="margin-top: 0;">
+   
+    <div class="container" style="height: 400px;width: 860px;">
+      <div class="card login-card">
+        <div class="row no-gutters">
+          <div class="col-md-5">
+            <img src="/assets/images/login.jpg" alt="login" class="login-card-img">
+          </div>
+
+          <div class="col-md-7">
+            <div class="card-body">
+              <p class="login-card-description"><em>Sign into your account</em></p>
+              <form action="/" method="POST">
+                  <div class="form-group">
+                    <label for="email" class="sr-only">Email</label>
+                    <input type="email" name="email" id="email" class="form-control" placeholder="Email address">
+                  </div>
+
+                  <div class="form-group mb-4">
+                    <label for="password" class="sr-only">Password</label>
+                    <input type="password" name="password" id="password" class="form-control" placeholder="Password">
+                  </div>
+                  <input name="login" id="login" class="btn btn-block login-btn mb-4" type="submit" value="Login">
+                </form>
+
+                <a href="#" class="forgot-password-link" data-toggle="popover"  data-content="Please contact your domain administrator.">Forgot Password?</a>
+                <script>
+                  $(document).ready(function(){
+                    $('[data-toggle="popover"]').popover();
+                  });
+                  $('body').on('click', function (e) {
+                  $('[data-toggle=popover]').each(function () {
+                  // hide any open popovers when the anywhere else in the body is clicked
+                  if (!$(this).is(e.target) && $(this).has(e.target).length === 0 && $('.popover').has(e.target).length === 0) {
+                    $(this).popover('hide');
+                   }
+                });
+              });
+            </script>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+  <hr>
+    <div class="container-fluid text-center" id="about">
+      <h2>ABOUT US</h2>
+      <p>SSN Institutions, founded by Padma Bhushan Dr. Shiv Nadar, Chairman, HCL Technologies, stand out as a premier centre of higher learning with a mission of pursuing excellence in education and research. The institutions are named after the Chairman’s father, Sri Sivasubramaniya Nadar. With their diverse and dynamic community of students, SSN offers a distinctive combination of some of the finest undergraduate, postgraduate and research programs, accomplished faculty, world-class facilities and a residential campus set on a sprawling 250 acres of sylvan surroundings.</p>
+    </div>
+  </hr>
+
+  <br>  
+  <div class="container-fluid text-center" id="contact">
+    <h2>SSN’s SOCIAL PRESENCE</h2>
+    <a href="https://www.facebook.com/SSNInstitution" class="fa fa-facebook"></a>
+    <a href="https://twitter.com/ssninstitutions" class="fa fa-twitter"></a>
+    <a href="https://www.linkedin.com/company/ssn-institutions-chennai-india/?trk=top_nav_home" class="fa fa-linkedin"></a>
+  </div>
+
+  <div class="container-fluid text-center">
+    <h6>Copyright © 2020 SSN. All Rights Reserved.</h6>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>

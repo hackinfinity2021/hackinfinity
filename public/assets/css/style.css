@@ -1,0 +1,34 @@
+/* Getting the new tags to behave */
+article, aside, audio, canvas, command, datalist, details, embed, figcaption, figure, footer, header, hgroup, keygen, meter, nav, output, progress, section, source, video {display:block}
+mark, rp, rt, ruby, summary, time {display:inline}
+/* Left & Right alignment */
+.left {float:left}
+.right {float:right}
+.wrapper {width:100%;overflow:hidden}
+.wrap{overflow:hidden;margin-left:-5px;padding-left:5px}
+
+/* Global properties */
+body {background:url(../images/bg_bot.jpg) center 0 repeat #faf3ed;border:0;font:14px;color:#200;line-height:24px; font-family: "Karla", sans-serif;}
+
+.main {	margin:0 auto;font-family: "Karla", sans-serif;}
+.body1 {background-color: #ffffff; }
+.body5 {background-color:#f2f2f2}
+.body6 {background-color:#f2f2f2;font-family: "Karla", sans-serif;}
+
+.carousel {
+    width:1000px;
+    height:640px;
+    margin: auto;
+    margin-top: 50px;
+  }
+
+.carousel-caption {
+    font-size: x-large;
+
+}
+
+#logo {display:inline-block;}
+#menu {float:right;padding:0 0 0 0;color:font-family: "Karla", sans-serif;display: ;}
+#menu li {float:left;padding-left:3px}
+#menu li a {display:block;font-size:24px;color:#faf3ed;line-height:40px;padding:0 20px;height:44px;letter-spacing:-1px;color: #737373;}
+#menu li a:hover, #menu .active a {text-decoration:none; repeat}
