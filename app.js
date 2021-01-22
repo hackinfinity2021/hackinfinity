@@ -60,6 +60,10 @@ app.get("/student", (req,res)=> {
   res.sendFile(__dirname + "/public/student.html");
 })
 
+app.get("/snowcubeadmin", (req,res)=>{
+  res.sendFile(__dirname + "/public/snowcubeadmin.html");
+})
+
 app.post("/", (req, res) => {
     const email = req.body.email;
     const password = req.body.password;
