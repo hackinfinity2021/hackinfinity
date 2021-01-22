@@ -4,17 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Owner</title>
-    <link rel="stylesheet" href="/assets/css/snowcube.css">
-    <script src="/assets/js/snowcube.js" defer></script>
+    <link rel="stylesheet" href="assets/css/snowcube.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="./assets/js/snowcubeadmin.js" defer></script>
 </head>
-<body>
-    <nav>
+
+<body >
+    <nav class="navbar navbar-default">
         <h3>Snow Cube</h3>
         <a href="">Dashboard</a> 
         <a href="">Analysis</a> 
         <a href="">Logout</a> 
     </nav>
-    <h1 style="text-align: center"></h1>
+
+    <form action="/snowcubeadminform" method="POST">
+        <button class="btn btn-primary">Add Items</button>
+    </form>
+
+    <p id="test"></p>
+    <!-- <h1 style="text-align: center"></h1>
     <section id="dashboard">
         
         <div class = "orders">
@@ -39,9 +49,10 @@
 
         </div>
 
-    </section>
-
-
+    </section> -->
+    <!-- <script>
+        document.getElementById("test").innerHTML = "hiiii";
+    </script> -->
     
 </body>
 </html>
