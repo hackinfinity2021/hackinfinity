@@ -7,13 +7,18 @@ mark, rp, rt, ruby, summary, time {display:inline}
 .wrapper {width:100%;overflow:hidden}
 .wrap{overflow:hidden;margin-left:-5px;padding-left:5px}
 
-/* Global properties */
-body {background:url(../images/bg_bot.jpg) center 0 repeat #faf3ed;border:0;font:14px;color:#200;line-height:24px; font-family: "Karla", sans-serif;}
+body {
+  font-family: "Karla", sans-serif;
+  background-color: #d0d0ce;
+  min-height: 100vh; }
+
+  .brand-wrapper {
+    margin-bottom: 19px; }
+    .brand-wrapper .logo {
+      height: 37px; }
 
 .main {	margin:0 auto;font-family: "Karla", sans-serif;}
-.body1 {background-color: #ffffff; }
-.body5 {background-color:#f2f2f2}
-.body6 {background-color:#f2f2f2;font-family: "Karla", sans-serif;}
+
 
 .carousel {
     width:1000px;
@@ -27,7 +32,15 @@ body {background:url(../images/bg_bot.jpg) center 0 repeat #faf3ed;border:0;font
 
 }
 
-#logo {display:inline-block;}
+.navbar {
+  overflow: hidden;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  z-index:1;
+}
+
+
 #menu {float:right;padding:0 0 0 0;color:font-family: "Karla", sans-serif;display: ;}
 #menu li {float:left;padding-left:3px}
 #menu li a {display:block;font-size:24px;color:#faf3ed;line-height:40px;padding:0 20px;height:44px;letter-spacing:-1px;color: #737373;}
