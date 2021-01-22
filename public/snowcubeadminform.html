@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+   
+    <body>
+        <nav class="navbar navbar-default">
+            <h3>Snow Cube</h3>
+            <a href="">Dashboard</a> 
+            <a href="">Analysis</a> 
+            <a href="">Logout</a> 
+        </nav>
+        <form action="/snowcubedish" class="form-inline" method="POST">
+            <div class="form-group col-sm-4">
+                <label for="dish">Dish:</label>
+                <input type="text" class="form-control" name="dish" id="dish">
+            </div>
+            <div class="form-group col-sm-4">
+                <label for="price">Price:</label>
+                <input type="number" class="form-control" name="price" id="price">
+            </div>
+            <button type="submit" class="btn btn-primary">Add</button>
+        </form>
+    </body>
+</html>
